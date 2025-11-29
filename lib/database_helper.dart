@@ -57,6 +57,7 @@ class DatabaseHelper {
   // --- MÉTODOS CRUD ---
   Future<int> insert(Map<String, dynamic> row) async {
     Database db = await instance.database;
+    print("JSON DO OBJETO CRIADO: $row");
     return await db.insert(table, row);
   }
 
