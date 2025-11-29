@@ -1,16 +1,19 @@
-# prova_flutter_202310148
+# Prova Prática Flutter - RA 202310148
 
-A new Flutter project.
+## Aluno
+**Nome:** Felipe (Coloque seu sobrenome aqui)
+**RA:** 202310148
+**Curso:** Análise e Desenvolvimento de Sistemas
 
-## Getting Started
+## Detalhes da Prova
+**Tema:** Mini Cadastro de Tarefas Profissionais
+**Campo Personalizado:** Ambiente de Execução
+**Tema Visual:** Vulcan (Primary: Red, Secondary: Black54)
 
-This project is a starting point for a Flutter application.
+## Dificuldades Encontradas
+A principal dificuldade foi configurar o ambiente inicial e entender a estrutura do banco de dados SQLite no Flutter, mas consegui superar dividindo o problema em etapas.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Como rodar
+1. Clone este repositório.
+2. Rode `flutter pub get`.
+3. Execute `flutter run`.

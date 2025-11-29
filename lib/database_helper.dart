@@ -4,7 +4,6 @@ import 'package:sqflite/sqflite.dart';
 import 'package:path_provider/path_provider.dart';
 
 class DatabaseHelper {
-  
   // Informações do Banco de Dados
   static const _databaseName = "tarefas_202310148.db"; // SEU RA AQUI
   static const _databaseVersion = 1;
@@ -18,7 +17,7 @@ class DatabaseHelper {
   static const columnPrioridade = 'prioridade';
   static const columnCriadoEm = 'criadoEm';
   // SEU CAMPO PERSONALIZADO:
-  static const columnAmbienteExecucao = 'ambienteExecucao'; 
+  static const columnAmbienteExecucao = 'ambienteExecucao';
 
   // Padrão Singleton
   DatabaseHelper._privateConstructor();
@@ -35,8 +34,11 @@ class DatabaseHelper {
   _initDatabase() async {
     Directory documentsDirectory = await getApplicationDocumentsDirectory();
     String path = join(documentsDirectory.path, _databaseName);
-    return await openDatabase(path,
-        version: _databaseVersion, onCreate: _onCreate);
+    return await openDatabase(
+      path,
+      version: _databaseVersion,
+      onCreate: _onCreate,
+    );
   }
 
   Future _onCreate(Database db, int version) async {
